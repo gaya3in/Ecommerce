@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <center>
+            <form method="POST">
+                {{form.as_p}}
+            </form>
+            {% for message in messages %}
+            <p>{{message}}</p>
+            {% endfor %}
+            <input type="submit" value="Login">
+            <p>{{form.errors}}</p>
+            <p><span>Don't have an account?
+                <a href="{% url 'register' %}">Sign up</a></span></p>
+        </center>
+    </form>
+</body>
+</html>
