@@ -10,6 +10,9 @@ from .utils import getCookieData, getCartData, getShippingData
 import json
 import datetime
 
+
+
+#Adding comments for git
 # Create your views here.
 def register_view(request):
     form = RegisterForm()
