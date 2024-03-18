@@ -153,3 +153,7 @@ def processorder(request):
         shippingaddress.zipcode = data['shipping']['zipcode']
         shippingaddress.save()
     return JsonResponse("Payment complete!", safe=False)
+
+
+def completeorder(request):
+     return JsonResponse("Order complete! Thanks for shopping with us!!!", safe=False)
