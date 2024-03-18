@@ -10,9 +10,12 @@ media
 # Backup files # 
 *.bak 
 
+<<<<<<< HEAD
 # databse #
 *.sqlite3
 
+=======
+>>>>>>> 7049275 (added gitignore and changed login to logout in home page.)
 # If you are using PyCharm # 
 # User-specific stuff
 .idea/**/workspace.xml
