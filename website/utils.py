@@ -1,6 +1,7 @@
 from website.models import *
 from django.core.exceptions import ObjectDoesNotExist
 import json
+#comment is missing
 
 def getCookieData(request):
     try:
